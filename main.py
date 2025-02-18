@@ -2,11 +2,12 @@ import requests
 import time
 import telebot
 from bs4 import BeautifulSoup
+from flask import Flask, request
 
 TOKEN = "7982727494:AAGK-6Zl0QK9CaCF4_b4sqB21zk3khKS_y0"
 CHAT_ID = "@resellingbiglietti_bot"
 bot = telebot.TeleBot(TOKEN)
-
+app = Flask(__name__)
 # Lista degli artisti e URL da monitorare
 artists = [
     {"name": "Vasco Rossi", "urls": [
