@@ -4,7 +4,7 @@ import telebot
 from bs4 import BeautifulSoup
 
 TOKEN = "7982727494:AAGK-6Zl0QK9CaCF4_b4sqB21zk3khKS_y0"
-CHAT_ID = "@botbiglietti"
+CHAT_ID = "@resellingbiglietti_bot"
 bot = telebot.TeleBot(TOKEN)
 
 # Lista degli artisti e URL da monitorare
